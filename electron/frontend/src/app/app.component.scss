@@ -1,0 +1,127 @@
+@import '../assets/stylesheets/fonts.scss';
+
+.spinner-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .spinner-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .5);
+    z-index: 10;
+  }
+}
+
+::ng-deep .mat-progress-spinner circle {
+  stroke: #00b2ff;
+}
+
+mat-spinner {
+  z-index: 11;
+}
+
+.drawer-container {
+  height: 100%;
+
+  ::ng-deep .mat-dialog-container {
+    padding: 0px;
+
+    .add-machine-card {
+      padding: 0px;
+      height: 100%;
+
+      .header {
+        background-color: #0095d5;
+        height: 50px;
+        line-height: 50px;
+        color: #ffffff;
+        font-family: $global-font;
+        font-size: 20px;
+      }
+    }
+
+    ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline {
+      background-color: #00b5ff;
+      height: 1px;
+    }
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  .drawer-column {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+
+    .drawer-header-container {
+      background-color: #ebebeb;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      height: 170px;
+
+      .text {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        font-family: $global-font;
+      }
+    }
+
+    .navigator {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      .nav-btn {
+        padding: 20px;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        font-family: $global-font;
+        font-size: 20px;
+
+        .icon {
+          color: #0095d5;
+          font-size: 30px;
+          margin-right: 20px;
+          margin-bottom: auto;
+          margin-bottom: 13px;
+        }
+
+        .label {
+          padding-left: 20px;
+          margin-top: auto;
+          margin-bottom: auto;
+          line-height: 100%;
+          font-size: 20px;
+        }
+      }
+
+      .nav-btn:hover {
+        color: #3e6dff;
+      }
+
+      .nav-btn:hover .icon{
+        color: #00b5ff;
+      }
+
+    }
+  }
+}
+
+::ng-deep mat-dialog-container {
+  padding: 0 !important;
+}

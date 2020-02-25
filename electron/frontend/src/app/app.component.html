@@ -1,0 +1,41 @@
+<app-header></app-header>
+<mat-drawer-container class="drawer-container" autosize>
+
+  <mat-drawer #drawer class="drawer-column" mode="side">
+
+    <div class="drawer-header-container">
+      <div class="text">Title</div>
+    </div>
+
+    <div class="navigator">
+      <button mat-button class="nav-btn">
+        <mat-icon class="icon">apps</mat-icon>Menu
+      </button>
+
+      <button mat-button class="nav-btn">
+        <mat-icon class="icon">dvr</mat-icon>Machines
+      </button>
+
+      <button mat-button class="nav-btn">
+        <mat-icon class="icon">help</mat-icon>Documentation
+      </button>
+
+      <button mat-button class="nav-btn">
+        <mat-icon class="icon">school</mat-icon>iX University
+      </button>
+
+      <button mat-button class="nav-btn">
+        <mat-icon class="icon">person</mat-icon>My Settings
+      </button>
+    </div>
+
+  </mat-drawer>
+
+  <router-outlet></router-outlet>
+</mat-drawer-container>
+
+<!-- Loading Spinner -->
+<div class="spinner-wrapper" *ngIf="commonService?.showSpinner">
+  <div class="spinner-overlay"></div>
+  <mat-spinner [diameter]="50" [strokeWidth]="3"></mat-spinner>
+</div>
