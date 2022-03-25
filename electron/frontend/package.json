@@ -45,7 +45,7 @@
     "@types/jasmine": "2.5.38",
     "@types/jasminewd2": "^2.0.3",
     "@types/node": "6.0.60",
-    "electron": "^4.0.6",
+    "electron": "^13.6.6",
     "ts-node": "2.0.0",
     "tslint": "4.5.0",
     "typescript": "3.1.6"
